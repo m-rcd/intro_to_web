@@ -1,6 +1,10 @@
-
 require 'sinatra'
 set :session_secret, 'super secret'
+
+
+def initialize
+  @name = ["Amigo", "Oscar", "Viking"].sample
+end
 
 get '/' do
   'Hello!'
