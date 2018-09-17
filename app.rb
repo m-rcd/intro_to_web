@@ -9,13 +9,13 @@ get '/secret' do
   'Wingardium Leviosa'
 end
 
-get '/random_cat' do
+get '/random_dog' do
   @name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
 
 
-get '/named_cat' do
+get '/named_dog' do
   p params
   @name = params[:name]
   erb(:index)
